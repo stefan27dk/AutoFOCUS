@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Biler</title>
+
+    <!------STYLES-----::START::------>
+    <link rel="stylesheet"  href="/Main_site_styles/car_style.css"/>
+    <!-- <link rel="stylesheet"  href="/start_page_style.css"/> -->
+    <!------STYLES-----::END::------>
+
+
+    <!-----Get Adress of Opened Car-Content---------:::START:::----->
+    
+    <script type="text/javascript">
+        function LoadCustomeAdressBar(){
+            document.getElementById("adressbar1").value = window.location.href;
+        }
+
+        LoadCustomeAdressBar();
+    </script>
+    <!-----Get Adress of Opened Car-Content---------:::END:::----->
+
+
+
+
+
+<!------Copy--Current--URL---::START::------->
+    <script>
+        function copyCurrentUrl() {
+          var copyText = document.getElementById("adressbar1");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999)
+          document.execCommand("copy");
+         
+        }
+        </script>
+<!------Copy--Current--URL---::END::------->
+
+
+
+
+
+
+<!----Slide Images-::START::------>
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("car_content_images");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+<!----Slide Images-::END::------>
+
+
+
+
+
+</head>
+<body class="body_style">
+
+    <!-----Adressbar--------->
+    <input id="adressbar1"  class="custome_AdressBar" name="adressbar1" type="text" value=""/> 
+
+    <!-----Copy-Button------->
+    <button  class="copy_button" onclick="copyCurrentUrl()">Copy</button>
+ 
+
+
+<!------CARS HOLDER---::START::-->
+<div class="all_cars_holder">  
+    
+    <!---------CAR 1------::START::---->
+    <div  class="car_image_holder"><a href="#car1"><img class="car_image" src="Cars_Images/1962498113.jpg" /> 50000kr</a></div> 
+    <li id="car1" onmousemove="LoadCustomeAdressBar()"> <!---On open and mousemove get current url of the Car content----> 
+     
+        <div> 
+            <div class="car_content_alignment">  
+                <button class="car_slideshow_buttons" onclick="plusDivs(-1)">&#10094;</button> 
+                <div style="width: 600px; height: 400px; float: left; position: relative;">
+                    <img class="car_content_images" src="Cars_Images/1962498113.jpg" />   
+                    <img class="car_content_images" src="Cars_Images\1963281271.jpg" />  
+                    <img class="car_content_images" src="Cars_Images\1963991892.jpg" />  
+                </div>
+                <button class="car_slideshow_buttons" onclick="plusDivs(1)">&#10095;</button> 
+            <span class="car_content_text" ><h1>Detaljer</h1><hr/>Bilen er Ny syndddddddddd dddddddddddddddddddddddddddddddddddd ddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddet....Bala...ddd</span></div>    <a class="close" onclick="showDivs(slideIndex =1)" href="#hide"></a>
+        </div>   
+    </li>    
+    <!---------CAR 1------::END::---->
+
+
+
+ 
+     <!---------CAR 1------::START::---->
+     <div  class="car_image_holder"><a href="#car2"><img class="car_image" src="Cars_Images\1963321973.jpg" /> 50000kr</a></div> 
+     <li id="car2" onmousemove="LoadCustomeAdressBar()"> <!---On open and mousemove get current url of the Car content----> 
+      
+         <div> 
+             <div class="car_content_alignment">  
+                 <button class="car_slideshow_buttons" onclick="plusDivs(-1)">&#10094;</button> 
+                 <div style="width: 600px; height: 400px; float: left; position: relative;">
+                     <img class="car_content_images" src="Cars_Images/1962498113.jpg" />   
+                     <img class="car_content_images" src="Cars_Images\1963321973.jpg" />  
+                     <img class="car_content_images" src="Cars_Images\1963991892.jpg" />  
+                 </div>
+                 <button class="car_slideshow_buttons" onclick="plusDivs(1)">&#10095;</button> 
+             <span class="car_content_text" ><h1>Detaljer</h1><hr/>Bilen er Ny syndddddddddd dddddddddddddddddddddddddddddddddddd ddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddet....Bala...ddd</span></div>    <a class="close" href="#hide"></a>
+         </div>   
+     </li>    
+     <!---------CAR 1------::END::---->
+
+ 
+
+
+
+
+
+      <!---------CAR 1------::START::---->
+      <div  class="car_image_holder"><a href="#car3"><img class="car_image" src="Cars_Images\1963281271.jpg" /> 50000kr</a></div> 
+      <li id="car3" onmousemove="LoadCustomeAdressBar()"> <!---On open and mousemove get current url of the Car content----> 
+       
+          <div> 
+              <div class="car_content_alignment">  
+                  <button class="car_slideshow_buttons" onclick="plusDivs(-1)">&#10094;</button> 
+                  <div style="width: 600px; height: 400px; float: left; position: relative;">
+                      <img class="car_content_images" src="Cars_Images/1962498113.jpg" />   
+                      <img class="car_content_images" src="Cars_Images\1963281271.jpg" />  
+                      <img class="car_content_images" src="Cars_Images\1963991892.jpg" />  
+                  </div>
+                  <button class="car_slideshow_buttons" onclick="plusDivs(1)">&#10095;</button> 
+              <span class="car_content_text" ><h1>Detaljer</h1><hr/>Bilen er Ny syndddddddddd dddddddddddddddddddddddddddddddddddd ddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddet....Bala...ddd</span></div>    <a class="close" href="#hide"></a>
+          </div>   
+      </li>    
+      <!---------CAR 1------::END::---->
+
+ 
+
+
+
+
+
+      
+
+      <!---------CAR 1------::START::---->
+      <div  class="car_image_holder"><a href="#car4"><img class="car_image" src="Cars_Images\1963991892.jpg" /> 50000kr</a></div> 
+      <li id="car4" onmousemove="LoadCustomeAdressBar()"> <!---On open and mousemove get current url of the Car content----> 
+       
+          <div> 
+              <div class="car_content_alignment">  
+                  <button class="car_slideshow_buttons" onclick="plusDivs(-1)">&#10094;</button> 
+                  <div style="width: 600px; height: 400px; float: left; position: relative;">
+                      <img class="car_content_images" src="Cars_Images/1962498113.jpg" />   
+                      <img class="car_content_images" src="Cars_Images\1963281271.jpg" />  
+                      <img class="car_content_images" src="Cars_Images\1963991892.jpg" />  
+                  </div>
+                  <button class="car_slideshow_buttons" onclick="plusDivs(1)">&#10095;</button> 
+              <span class="car_content_text" ><h1>Detaljer</h1><hr/>Bilen er Ny syndddddddddd dddddddddddddddddddddddddddddddddddd ddddddddddddddddddddd ddddddddddddddddddddddddddddddddddddet....Bala...ddd</span></div>    <a class="close" href="#hide"></a>
+          </div>   
+      </li>    
+      <!---------CAR 1------::END::---->
+
+</div> 
+<!------CARS HOLDER---::END::-->
+ 
+
+ 
+ 
+
+  
+  
+    
+ 
+ 
+</div>
+
+
+</body>
+</html>

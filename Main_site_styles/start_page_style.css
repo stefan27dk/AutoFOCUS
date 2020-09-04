@@ -1,0 +1,159 @@
+﻿
+
+
+html {
+position: relative;
+min-height: 100%;
+}
+
+
+.body{
+    background-image: url('/Site_Images/background-Image.jpg');  
+    background-size: 110%;  
+    margin: 0 0 400px;
+    width: 100%;  
+    overflow-anchor: none;
+       
+}
+
+
+
+           /*Top Bar*/
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    color: deepskyblue;
+    background-color: rgb(48, 60, 84);
+    filter: drop-shadow(0px 5px 5px rgb( 255, 210, 77));
+}
+       
+     
+             /*Top Menu*/
+     .topmenu {
+         position:sticky;
+         margin:auto;
+         width: 500px;
+         height:100px;
+         background-color: rgb(59, 68, 77);
+         border: 2px solid red;
+         border-radius: 5px;
+         border-color: red;
+         margin-top:50px;
+         align-items: center;
+         
+     }
+     
+             /*Middle Container*/
+     .middle_container {
+         width: 98%;
+         height: 600px;
+         background-color: transparent;
+         position: relative;
+         margin-top: 2%;
+         margin-left: 0%;
+         border: 440px solid rgb(17, 199, 250);
+         display: flex;
+         flex-direction:column;
+         
+     }
+     
+     
+             /*Glowy Border*/
+      .glowingborder {
+          outline: none;
+          border: 1px solid rgb(5, 230, 255);
+          /*##Glow*/
+          /*3 different for different browsers*/
+          box-shadow: 0px 0px 50px rgb(5, 230, 255);
+          -moz-box-shadow: 0px 0px 50px rgb(245, 215, 66);
+          -webkit-box-shadow: 0px 0px 50px rgb(5, 230, 255);
+      }
+
+
+
+
+        /*Top Menu Items*/
+       .top_menu_items {
+           width: 150px;
+           height: 50px; 
+            
+       }
+
+
+        .top_menu_items:hover {
+            filter: drop-shadow(10px 5px 5px rgb( 255, 210, 77));
+        }
+
+        .top_menu_items:active {
+            filter: drop-shadow(10px 5px 5px rgb(0, 255, 68));
+        }
+
+
+
+
+
+        /*Menu div helpers for alignment*/
+        .top_menu_divs_alignment {
+            display: inline-block;
+            margin: 0 4%;
+        }
+
+
+
+
+
+
+ /*Menu Text*/
+.top_menu_text {
+    display: block;
+    text-align: center;
+    margin: inherit;
+    color: aqua;
+    filter: drop-shadow(10px 3px 5px rgb(77, 205, 255));
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+
+    .top_menu_text:hover {
+        filter: drop-shadow(10px 3px 5px rgb(243, 255, 77));
+    }
+
+
+
+
+
+
+            /*Footer*/
+.footer {  
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height:150px;
+    background-color: rgb(55, 62, 71);
+    color: blue;
+    text-align: left;
+    filter: drop-shadow(0px 0px 10px rgb(243, 255, 77));
+    border-top: 1px solid rgb(0, 0, 0);
+    
+  
+}
+
+
+
+/*Footer Text*/
+.footer_text {
+    color: rgb( 0, 204, 255 );
+    font-family:Verdana;
+    font-weight: bold;
+    margin: auto;
+    display: inline-block;
+    position: static;
+    
+}
+     
