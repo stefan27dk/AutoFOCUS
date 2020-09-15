@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<button onclick="Recur(0, arr.length)" >CLICK</button>  <!----BUTTON-->
+
+    <script> // Script
+
+    var arr = [1, 4, 6, 3, 7]; // ARRAY
+    // var n = arr.length -1;
+    // var l = 0;
+
+ 
+
+
+    function Recur(x, n)
+    {
+    
+    
+        if(n==0)
+        {
+          alert(x);
+         
+        }
+        else  
+        { 
+          n--;
+          x += arr[n];
+          
+        //   alert(n);
+          
+          return Recur(x, n); 
+        }
+       
+      
+         
+    }  
+
+     
+    </script>
+
+</body>
+</html>
