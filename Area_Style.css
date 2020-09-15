@@ -1,0 +1,147 @@
+
+/*Top F(x) holder*/
+.top_input_holder
+{  
+     width: 50%; 
+     min-width: 280px;
+    background-color: rgb(34, 34, 34); 
+    border-bottom: solid 2px rgb(0, 174, 255);
+    color: rgb(250, 194, 73);
+    font-weight: bold;
+    font-family: "Verdana";
+    border-top-left-radius: 10px ;
+    border-top-right-radius: 10px ;
+}
+
+ 
+
+.top_input_FX
+{
+    display: flex; 
+    width: 100%;
+    min-width: 250px;
+    background-color: rgb(34, 34, 34); 
+     
+}
+
+.input_Vars
+{
+    width: 25px;
+}
+
+p
+{
+    height: 10px;
+    margin-top:0;
+
+}
+
+/*Graph_content_holder*/
+.Graph_content_holder
+{
+    display:flexbox; 
+}
+
+
+
+
+/*Graph-Rectangles-Style*/
+ .graphStyle
+ {
+    background-color: lime; 
+    position: relative; 
+    left: 20%;
+    bottom: 2px;  
+ }
+ .graphStyle:hover
+ {
+     background-color: rgb(0, 4, 255); 
+ }
+
+
+
+
+
+
+
+
+/*Graph HOLDER*/ 
+.Graph_Holder
+{
+    min-width: 280px;
+    width: 50%; 
+    height: auto;
+    min-height: 300px; 
+    position: relative; 
+    display: flex;
+    align-items: flex-end;
+    background-color: rgb(34, 34, 34);
+    border-radius: 2px;
+    
+}
+
+
+
+/*Variable Container*/
+
+/*Holder of Variables under the Graph-Holder*/
+.Var_holder_div
+{   
+    display:inline-block; 
+    width: 50%;
+    min-width: 280px;
+    background-color: rgb(71, 66, 66);
+    position: relative;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top: solid 2px rgb(14, 160, 245);
+    
+      
+}
+
+.Var_holder_div p
+{
+     
+    /* align-items: flex-end; */
+    width: auto;
+    height: auto;
+    color: rgb(250, 194, 73);
+    /* background-color: gold; */
+    display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: bold;
+    font-family: "Verdana";
+   
+
+     
+}
+
+
+
+
+
+
+/*INPUT*/
+
+/*Show Variables - InputBoxes*/
+.Gr_show_vars_input_tag
+{
+    margin-left:10px;
+    width: 55px;
+    height: auto !important;
+    background-color:rgb(79, 79, 80);
+    color: orange;
+    border-radius: 5px; 
+}
+
+
+
+.Gr_show_vars_input_tag:hover
+{
+    border-color: rgb(28, 149, 248);
+}
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+ 
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+         
+        
+        <script>
+            
+var a = ["Aarhus", "Æabenraa", "Bilund", "Horsens", "Århus", "aarhus", "Vejle", "Æblelund", "Aeblelund"];
+
+a.sort();
+
+alert(JSON.stringify(a));
+window.Bubble_Sort(a);
+function Bubble_Sort(a)
+{
+
+  var arr = a;
+  var n = a.length-1;
+  var swapp;
+
+  do
+  {
+      swapp = false;
+      for(var i = 0; i < n; i++)
+      {
+          
+            if(arr[i] < arr[i+1])
+            {
+                [arr[i], arr[i+1]] = [arr[i+1], arr[i]] // Swapp
+                swapp = true;
+            }
+            
+        }
+        n--;
+        
+    }while(swapp == true)
+    alert(JSON.stringify(arr));
+  
+
+}
+
+        </script>
+    </body>
+</html>

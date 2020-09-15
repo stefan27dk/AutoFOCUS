@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="To_Dim_Arr()"> BBB</button>
+
+    <script>
+ function To_Dim_Arr()
+{
+    var label1 = document.createElement("LABEL");
+    label1.style.backgroundColor ="red"; 
+    label1.innerHTML += "</br>";
+    // label1.innerHTML = "ssssssss";
+
+
+    var arr = []; // 2 Dim Array Declaring
+    // arr[[i,e], [i,e], [i,e]];
+    for (let i = 0; i < 12; i++)  // Populate 2 dim array
+    {
+         var a = Math.floor(Math.random() * 100);
+         var b = Math.floor(Math.random() * 100);
+          
+         arr[i] = [a,b]; // att "i" index insert 2 random dememsions
+    }
+
+
+var count = 0;
+var arr_pos = arr.length / 4; // For automatic alignment of the array in the label 4 Rows max, but sometimes can have 4 plus one small
+for (let g = 0; g < arr.length; g++) // Print array
+{
+    if(count == Math.floor(arr_pos)) // Make new line so max there are max 4 rows
+    {
+        label1.innerHTML += "</br>"; // Add new Line
+        count =0;
+    }
+
+    label1.innerHTML += arr[g] + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"; // Print in the label "Add it to the label"
+    
+    count++;
+}
+
+        var maxRow = arr.map(function(row){ return Math.max.apply(Math,row);});
+        var max = Math.max.apply(null, maxRow);
+        alert(max);
+         
+//  for (let k = 0; k < arr.length; k++)
+//  {
+// //    if(arr[k] == [max,arr[k][1]] || arr[k] == [arr[k][1]],max )
+// //    {
+// //        var st = (arr[k]).toString();
+// //      alert(st);
+// //      break
+// //    }
+    
+//  }
+        
+     
+    document.body.appendChild(label1); // Add label to the body
+}
+
+ 
+ 
+
+ 
+    </script>
+
+</body>
+</html>

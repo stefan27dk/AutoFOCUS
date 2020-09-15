@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input maxlength="12" id="v_input"> <!---The Input with ID---->  
+
+
+    <!-- ”xxxxxnnn:xxx”  Bemærk at der skal optræde et kolon i position 8. Længden på teksten skal være 12 -->
+
+    <script> // Validator
+
+        var va_input = document.getElementById("v_input"); // #1 - Get Element by ID
+
+        va_input.onkeypress = function (e) // #2 - On the got Element keyPress 
+        {
+            e = e || window.event; // #3 - Key Press event "e" or Window Event
+            var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which; // #4 -If undefined it will change to keyCode. Depends on Browser - which or keyCode - If Internet Explorer tha it will say e.which is undefined and than change to keyCode
+            var charStr = String.fromCharCode(charCode); // #5 - Char to String
+ 
+
+            if (!/[a-zA-Z]/.test(charStr) && va_input.value.length <= 4) // #6 - Prevent Numbers from place 0-4
+            {
+                return false;
+            }
+
+            else if(!/\d/.test(charStr) && (va_input.value.length > 4) && (va_input.value.length <= 7)) // #7 -Prevent Letters from 5-7
+            {
+              return false;
+            }
+
+            else if((va_input.value.length > 7) && (va_input.value.length <= 8) && charStr != ':') // #8 only Kolon allowed on place 8 - Kolon - ':'
+            {
+              return false;
+            }
+            else if((va_input.value.length > 8) && (va_input.value.length < 11) && !/[a-zA-Z]/.test(charStr)) // #9 - Only Letters from place 8 - 11          !/^[a-zA-Z]+$/
+            {
+               return false;
+            } 
+ 
+       
+        };
+    </script>
+
+</body>
+
+</html>

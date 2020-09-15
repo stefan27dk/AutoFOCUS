@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <html >  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/Area_Style.css">
+        <script src="Area_Script.js"></script> <!--Graph-JS-->
+ 
+
+    </head>
+    <body >
+        
+        <!-----GRAPH--::CONTENT::-::INPUT--OF----F(x)---->
+        <div class="Graph_content_holder">
+            <div class="top_input_holder">
+            </br>
+                 <p style="color: red;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ex : f(X) = ax^2+bx+c</p>
+            <p style="color: rgb(24, 164, 245);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; a &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pow&nbsp;&nbsp;&nbsp;b &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c</p>
+        <diV class ="top_input_FX"><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f(x) =  
+            <input value ="-0.5" class ="input_Vars" id="in_a"/> <p>X<p>^
+                <input value ="2" class ="input_Vars" id="in_pow" />
+                <input value ="0" class ="input_Vars" id="in_b"/><p>X
+                    <input value ="4.5" class ="input_Vars" id="in_c" /> 
+                    <button id="Start_End_Button" onclick="perform_Clear_Graph_Draw();">Enter</button>  <button id="reset_input_X_Start_End" onclick="Reset_Input_X();">RESET / Auto : X1 & X2</button></p> </p></p></p></diV>
+                </br>
+                </div> 
+
+
+<!-----GRAPH Holder------>
+<div id="graph_holder" class="Graph_Holder"> </div>
+
+
+<!---VAR--HOLDER---::START::------->
+<div class="Var_holder_div">
+    <p>R: Width = <input readonly class="Gr_show_vars_input_tag" id = "selectedRec_width_display"/></p>
+ <p>R: Height = <input readonly class="Gr_show_vars_input_tag" id = "selectedRec_Height_display"/></p>
+</br>
+   <p>a = <input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "a_display" /></p>
+   <p>b =<input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "b_display" /></p> 
+   <p>c =<input  oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "c_display" /> </p>
+    <p>d =<input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "d_display"/></p>
+    <p>Area =<input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "Area_display"/></p>
+    <p>Ratio = <input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "ratio_display" value="67" /></p>
+        <p>X1 =<input value="NaN" oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "x1_display"/></p>
+            <p>X2 =<input value="NaN" oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "x2_display"/></p>
+                
+                    <p>Top: X= <input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "top_display"/></p>
+                        
+                            <p>Accurateness = <input oninput="perform_Clear_Graph_Draw()" class="Gr_show_vars_input_tag" id = "accuratness_display" value="0.5"/></p>
+                            
+</div>
+<!---VAR--HOLDER---::END::------->
+
+</div>
+
+
+ 
+    </body>
+</html>
