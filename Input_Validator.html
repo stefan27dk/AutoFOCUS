@@ -21,7 +21,7 @@
         va_input.onkeypress = function (e) // #2 - On the got Element keyPress 
         {
             e = e || window.event; // #3 - Key Press event "e" or Window Event
-            var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which; // #4 -If undefined it will change to keyCode. Depends on Browser - which or keyCode - If Internet Explorer tha it will say e.which is undefined and than change to keyCode
+            var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which; // #4 -If undefined it will change to keyCode. Depends on Browser - which or keyCode - If Internet Explorer than it will say e.which is undefined and than change to keyCode
             var charStr = String.fromCharCode(charCode); // #5 - Char to String
  
 

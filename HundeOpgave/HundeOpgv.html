@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+            background-color: rgb(40, 37, 44);
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+
+
+        /* --------TOP-------*/
+        .currentItemText {
+            text-align: center;
+            margin: auto;
+            color: coral;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 30px;
+        }
+
+
+
+
+
+        /* --------TOP--BAR--DIV-----*/
+        .topBar {
+            width: 100%;
+            height: 50px;
+            top: 0;
+            left: 0;
+            /* background-color: rgb(37, 31, 31); */
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 10%, #202729 90%);
+            border-bottom: solid 2px rgb(80, 92, 95);
+        }
+
+
+        /* ------TOP--BAR--Image-----*/ 
+        .topBarImg 
+        {
+            width: 35px;
+            height: 35px;
+            float: right;
+            margin-right: 10px;
+            margin-top: 5px;
+            filter: drop-shadow(1px 1px 5px rgb(255, 187, 0));
+        }
+
+
+
+        /* --------Content---DIV-----*/
+        .contentContainer {
+            width: 400px;
+            height: 300px;
+            background: linear-gradient(to bottom, rgba(82, 42, 62, 0.397) 50%, #2c1d2e77 80%);
+            margin: auto;
+            margin-top: 5%;
+            border: solid 2px rgb(146, 120, 120);
+            border-radius: 10px;
+        }
+
+
+
+
+        /* --------Labels--for--Inputs-----*/
+        .labelInput {
+            color: sandybrown;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            vertical-align: middle;
+        }
+
+
+
+
+
+        /* -------All--Inputs-----*/
+        input {
+            background-color: rgb(77, 77, 77);
+            border: 2px solid rgb(32, 135, 175);
+            border-radius: 5px;
+            color: coral;
+            font-weight: bold;
+            font-family: verdana;
+        }
+
+
+
+        input:hover {
+            background-color: rgb(40, 44, 51);
+            border: 2px solid rgb(255, 165, 30);
+            border-radius: 5px;
+        }
+
+
+
+
+        input:focus {
+            outline: none !important;
+            border: 2px solid rgb(0, 162, 255);
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgb(4, 176, 255);
+            background-color: rgb(40, 44, 51);
+        }
+
+
+
+
+        /* --------Image--Before--Imput-----*/
+        .inputImage {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+
+
+
+        /* --------For--Inputs--With--Data--Not--All--Imputs-----*/
+        .inputData {
+            vertical-align: middle;
+            margin-top: 5px;
+        }
+
+
+
+
+        /* --------Center---Input,Img,Label---DIV-----*/
+        .divCenter {
+            /* background-color: red; */
+            float: right;
+            margin-right: 5%;
+        }
+
+
+
+
+        /* --------Bottom--Menu-------*/
+        .bottomMenuImg {
+            width: 45px;
+            height: 45px;
+            margin-left: 10px; 
+            margin-right: 10px;
+            filter: drop-shadow(3px 0px 6px rgb(0, 0, 0)); 
+        }
+
+        .bottomMenuImg:hover
+        {
+            filter: drop-shadow(0px 0px 10px rgb(255, 5, 88)); 
+            border-bottom: solid 3px red;
+        }
+
+
+        .bottomMenuImg:active
+        {
+            filter: drop-shadow(0px 0px 7px rgb(168, 255, 29));  
+        }
+
+
+
+        /* --------BOTTOM---MENU--DIV-------*/
+        .bottomMenu {
+            width: 100%;
+            height: 50px;
+            bottom: 0;
+            left: 0;
+            position: fixed;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 20%, #202729f8 70%);
+            border-top: solid rgb(122, 122, 122);
+            border-bottom: solid 1px rgb(255, 209, 58)
+        }
+
+
+
+
+        /* --------BOTTOM---MENU--Center---Elements/Items-------*/
+       .bottomMenuCenterElementsDiv
+       {
+          margin:auto;   
+          width: fit-content; 
+       }
+       
+       
+
+    </style>
+</head>
+
+
+<body>
+
+    <!---Top--Title-->
+    <div class="topBar">
+        <img class="topBarImg" src="Images\BellIMG.png">
+        <h5 class="currentItemText">CUTRRR</h5>
+    </div>
+
+
+
+    <!---CONTENT---->
+    <div class="contentContainer">
+
+        </br>
+        <div class="divCenter">
+            <img class="inputImage" src="Images\firstnameIMG.png">
+            <label class="labelInput">Firstname:</label>
+            <input class="inputData" type="text">
+        </div>
+        </br>
+        </br>
+        </br>
+
+
+
+
+        <div class="divCenter">
+            <img class="inputImage" src="Images\LastNameIMG.png">
+            <label class="labelInput">Lastname:</label>
+            <input class="inputData" type="text">
+        </div>
+        </br>
+        </br>
+        </br>
+
+
+
+
+
+        <div class="divCenter">
+            <img class="inputImage" src="Images\tlfIMG.png">
+            <label class="labelInput">TLF:</label>
+            <input class="inputData" type="text">
+        </div>
+        </br>
+        </br>
+        </br>
+
+
+
+
+        <div class="divCenter">
+            <img class="inputImage" src="Images\emailIMG.png">
+            <label class="labelInput">Email:</label>
+            <input class="inputData" type="text">
+        </div>
+        </br>
+        </br>
+        </br>
+
+
+
+
+        <div class="divCenter">
+            <img class="inputImage" src="Images\DOGIMG.png">
+            <label class="labelInput">Dog Name:</label>
+            <input class="inputData" type="text">
+        </div>
+
+        </br>
+        </br>
+        </br>
+        </br>
+    </div>
+
+
+
+
+
+
+    <!---BottomMenu------->
+    <div class="bottomMenu">
+
+    <div class="bottomMenuCenterElementsDiv">
+        <img class="bottomMenuImg" src="Images\HomeIMG.png" href="#">
+        <img class="bottomMenuImg" src="Images\InviteIMG.png">
+        <img class="bottomMenuImg" src="Images\ReportIMG.png">
+        <img class="bottomMenuImg" src="Images\DogIMG.png">
+        <img class="bottomMenuImg" src="Images\MapIMG.png">
+        <img class="bottomMenuImg" src="Images\SettingsIMG.png">
+    </div>
+
+
+
+    </div> 
+</body>
+
+
+</html>
