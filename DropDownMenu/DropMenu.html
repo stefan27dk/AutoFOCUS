@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<style>
+
+/*========================::Menu::================================================================*/
+
+/*-------::No - underline under <a> ::--------*/
+a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: Andale Mono, monospace;
+}
+
+
+/*-------::Menu - Container::--------*/
+nav {
+  font-family: Andale Mono, monospace;
+}
+
+
+
+/*-------::Holder - of - Lists/Rows::--------*/ 
+ul {
+  background: rgb(62, 70, 85);
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+
+/*-------::Lists/Rows::--------*/  
+li {
+  color: rgb(255, 178, 77);
+  background: rgb(44, 58, 57);
+  background: linear-gradient(180deg, rgba(80,80,97,1) 2%, rgba(20,44,57,1) 7%, rgba(70,70,85,1) 11%, rgba(28,31,32,1) 90%);
+  display: block;
+  float: left;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.01s;
+}
+  
+
+/*-------::Lists/Rows - Link::--------*/   
+li a {
+  color: rgb(255, 178, 77); 
+}
+
+ 
+
+/*-------::Lists/Rows - HOVER::--------*/   
+li:hover,
+li:focus-within {
+  background: rgb(80,80,97);
+background: linear-gradient(180deg, rgba(80,80,97,1) 2%, rgba(20,44,57,1) 7%, rgba(53,58,74,1) 11%, rgba(28,31,32,1) 73%, rgba(12,63,93,1) 87%, rgba(0,168,255,1) 100%);
+  cursor: pointer;
+}
+
+
+
+/*-------::"focus-within" is focus when tabbing::--------*/  
+/* li:focus-within 
+{
+    background: rgb(61, 184, 31); 
+} */
+
+
+/*-------::"focus-within a" is focus when tabbing a - properties::--------*/   
+li:focus-within a {
+  outline: none;
+}
+
+
+
+/*-------::Sub - UL::--------*/  
+ul li ul {
+  background: orange;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+
+}
+
+
+
+/*-------::DropDown::--------*/   
+ul li:hover > ul, /*-------::DropDown::--------*/
+ul li:focus-within > ul,
+ul li ul:hover,
+ul li ul:focus {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+
+/*-------::The List/Rows of the Sub - || UL ||::--------*/  
+ul li ul li {
+  background: rgb(53,58,74);
+background: linear-gradient(180deg, rgba(83,88,104,1) 10%, rgba(58,61,62,1) 82%, rgba(49,60,67,1) 98%, rgb(51, 49, 49) 99%);
+  clear: both;
+  width: 100%;
+} 
+</style>
+
+<!--=================== || Menu ||==============================================================-->
+<nav role="navigation">
+    <ul>
+      <li><a href="#">One</a></li>
+      <li><a href="#">Two</a>
+        <ul class="dropdown">
+          <li><a href="#">Sub-1</a></li>
+          <li><a href="#">Sub-2</a></li>
+          <li><a href="#">Sub-3</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Three</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
